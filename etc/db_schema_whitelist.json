@@ -1,0 +1,20 @@
+{
+    "daily_deal": {
+        "column": {
+            "entity_id": true,
+            "product_id": true,
+            "title": true,
+            "quantity": true,
+            "start_time": true,
+            "end_time": true,
+            "status": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "DAILY_DEAL_PRODUCT_ID": true,
+            "DAILY_DEAL_PRODUCT_ID_CATALOG_PRODUCT_ENTITY_ENTITY_ID": true
+        }
+    }
+}
