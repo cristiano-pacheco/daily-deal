@@ -3,4 +3,8 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="CristianoPacheco\DailyDeal\Api\Data\DailyDealInterface"
                 type="CristianoPacheco\DailyDeal\Model\DailyDeal"/>
+    <preference for="CristianoPacheco\DailyDeal\Api\Data\DailyDealSearchResultsInterface"
+                type="CristianoPacheco\DailyDeal\Model\DailyDealSearchResults"/>
+    <preference for="CristianoPacheco\DailyDeal\Api\DailyDealRepositoryInterface"
+                type="CristianoPacheco\DailyDeal\Model\DailyDealRepository"/>
 </config>
