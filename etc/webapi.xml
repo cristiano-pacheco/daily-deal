@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/cristianopacheco/daily_deals/:id" method="GET">
+        <service class="CristianoPacheco\DailyDeal\Api\DailyDealRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="CristianoPacheco_DailyDeal::retrieve"/>
+        </resources>
+    </route>
+    <route url="/V1/cristianopacheco/daily_deals" method="GET">
+        <service class="CristianoPacheco\DailyDeal\Api\DailyDealRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="CristianoPacheco_DailyDeal::retrieve"/>
+        </resources>
+    </route>
+    <route url="/V1/cristianopacheco/daily_deals" method="POST">
+        <service class="CristianoPacheco\DailyDeal\Api\DailyDealRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="CristianoPacheco_DailyDeal::save"/>
+        </resources>
+    </route>
+    <route url="/V1/cristianopacheco/daily_deals/:id" method="PUT">
+        <service class="CristianoPacheco\DailyDeal\Api\DailyDealRepositoryInterface" method="update"/>
+        <resources>
+            <resource ref="CristianoPacheco_DailyDeal::save"/>
+        </resources>
+    </route>
+    <route url="/V1/cristianopacheco/daily_deals/:id" method="DELETE">
+        <service class="CristianoPacheco\DailyDeal\Api\DailyDealRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="CristianoPacheco_DailyDeal::delete"/>
+        </resources>
+    </route>
+</routes>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="CristianoPacheco_DailyDeal::daily_deal" title="Daily Deal" translate="title" sortOrder="10">
+                    <resource id="CristianoPacheco_DailyDeal::retrieve" title="Retrieve" translate="title" sortOrder="10"/>
+                    <resource id="CristianoPacheco_DailyDeal::save" title="Save" translate="title" sortOrder="20"/>
+                    <resource id="CristianoPacheco_DailyDeal::delete" title="Delete" translate="title" sortOrder="30" />
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
